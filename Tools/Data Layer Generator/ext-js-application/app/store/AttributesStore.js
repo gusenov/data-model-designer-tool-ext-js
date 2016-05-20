@@ -18,14 +18,23 @@ Ext.define('Dalagen.store.AttributesStore', {
     alias: 'store.attributes',
 
     model: 'Dalagen.model.AttributeModel',
-
-    data: data,
-
+	autoLoad: true,
+	autoSync: true,
+    //data: data,
+	
     proxy: {
-        type: 'memory',
-        reader: {
-            type: 'json',
-            rootProperty: 'data'
-        }
-    }
+		type: 'sessionstorage',
+		id  : 'attributes'
+        //type: 'memory',
+        //reader: {
+        //    type: 'json',
+        //    rootProperty: 'data'
+        //}
+    }/*,
+	
+	listeners: {
+				datachanged: function(store, options) {
+					console.log(data);
+				}
+			}*/
 });

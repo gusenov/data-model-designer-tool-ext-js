@@ -3,6 +3,7 @@
 sencha generate view attributes.AttributesView
 */
 
+
 Ext.define('Dalagen.view.attributes.AttributesView',{
     extend: 'Ext.tab.Panel',
 
@@ -14,9 +15,9 @@ Ext.define('Dalagen.view.attributes.AttributesView',{
 		'Dalagen.view.attributes.AttributesViaDragAndDropView'
     ],
 
-    controller: 'attributes-attributesview',
+    controller: 'attributesViewCtrl',
     viewModel: {
-        type: 'attributes-attributesview'
+        type: 'attributesViewModel'
     },
 
     // html: 'Hello, World!!'
@@ -36,12 +37,7 @@ Ext.define('Dalagen.view.attributes.AttributesView',{
                 items: [{
                     text: 'Add',
                     iconCls: 'icon-add',
-                    handler: function() {
-                        // empty record
-                        var rec = new Attribute();
-                        attributeStore.insert(0, rec);
-                        //rowEditing.startEdit(rec, 0);
-                    }
+                    handler: 'onClickAddAttribute'
                 }, {
                     itemId: 'delete',
                     text: 'Delete',

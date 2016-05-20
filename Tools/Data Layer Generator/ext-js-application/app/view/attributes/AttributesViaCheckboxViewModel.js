@@ -12,6 +12,11 @@ Ext.define('Dalagen.view.attributes.AttributesViaCheckboxViewModel', {
     stores: {
 		attributesStore: {
 			type: 'attributes'
+			/*listeners: {
+				datachanged: function(store, options) {
+					// Do nothing
+				}
+			}*/
 		}
 	}
 });

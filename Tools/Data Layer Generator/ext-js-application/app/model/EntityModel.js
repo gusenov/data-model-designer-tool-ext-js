@@ -4,7 +4,7 @@ sencha generate model EntityModel uid:int,name
 */
 
 Ext.define('Dalagen.model.EntityModel', {
-	extend: 'Ext.data.Model',
+	extend: 'Ext.data.TreeModel',
 	
 	// Ext.data.Model Configs:
 
@@ -33,7 +33,9 @@ Ext.define('Dalagen.model.EntityModel', {
     });	
 	*/
 	
-	clientIdProperty: 'clientId',
+	//childType: 'Dalagen.model.EntityModel',
+	
+	//clientIdProperty: 'clientId',
 	/*
 	Сначала объект данной сущности создается на клиенте и ему присваивается клиентский (локальный) идентификатор.
 	После отправки объекта на сервер, он там получит реальный (глобальный) идентификатор.
@@ -52,8 +54,8 @@ Ext.define('Dalagen.model.EntityModel', {
 	*/
     
     fields: [
-        { name: 'uid', type: 'int', convert: null },
-        { name: 'name', type: 'string' }
+        { name: 'uid', type: 'int' },
+        { name: 'entityName', type: 'string' }
     ],
 	/*
 	В поле type указывается псевдоним (alias) для одного из типов из Ext.data.field.*.
@@ -72,8 +74,8 @@ Ext.define('Dalagen.model.EntityModel', {
 	
 	// Генератор значений для idProperty, когда значение для него не задается явно.
     identifier: {
-         type: 'sequential',
-         id: 'xy' // общий генератор для моделей с таким же id у их генератора
+         type: 'sequential'
+         //id: 'xy' // общий генератор для моделей с таким же id у их генератора
     },
 	
     //manyToMany: 'Attribute'

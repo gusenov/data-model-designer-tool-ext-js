@@ -9,7 +9,8 @@ Ext.define('Dalagen.model.AttributeModel', {
     fields: [
         { name: 'uid', type: 'int', convert: null },
         { name: 'name', type: 'string' },
-        { name: 'type', type: 'string' }
+        { name: 'type', type: 'string' },
+		{ name: 'active', type: 'bool', persist: false}
 
     ],
 	

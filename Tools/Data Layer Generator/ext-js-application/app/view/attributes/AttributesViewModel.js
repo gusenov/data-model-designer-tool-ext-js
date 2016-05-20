@@ -5,9 +5,22 @@ sencha generate view attributes.AttributesView
 
 Ext.define('Dalagen.view.attributes.AttributesViewModel', {
     extend: 'Ext.app.ViewModel',
-    alias: 'viewmodel.attributes-attributesview',
+    requires: [
+        'Dalagen.store.AttributesStore'
+    ],
+    alias: 'viewmodel.attributesViewModel',
     data: {
         name: 'Dalagen'
-    }
+    },
+    stores: {
+		attributesStore: {
+			type: 'attributes'
+			/*listeners: {
+				datachanged: function(store, options) {
+					// Do nothing
+				}
+			}*/
+		}
+	}
 
 });

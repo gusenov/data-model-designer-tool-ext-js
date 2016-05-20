@@ -3,27 +3,31 @@
 Ext.define('Dalagen.store.EntitiesStore', {
     extend: 'Ext.data.TreeStore',
 
-    /*requires: [
-        'Dalagen.model.AttributeModel'
+    requires: [
+        'Dalagen.model.EntityModel'
     ],
 
-    model: 'Dalagen.model.AttributeModel',
-
-    data: data,
+    model: 'Dalagen.model.EntityModel',
+	//autoLoad: true,
+	//autoSync: true,
+    //data: data,
 
     proxy: {
-        type: 'memory',
-        reader: {
+        type: 'sessionstorage',
+		id: 'entities'
+        /*reader: {
             type: 'json',
             rootProperty: 'data'
-        }
-    }*/
+        }*/
+    },
 	
 	alias: 'store.entities',
+	//rootVisible: true,
+	defaultRootId: 0
 	
 	//defaultRootProperty: '',
 	
-    root: {
+    /*root: {
         expanded: true,
         text: 'Continents',
 
@@ -51,6 +55,6 @@ Ext.define('Dalagen.store.EntitiesStore', {
             text: 'Africa',
             leaf: true,
         }]
-    }
+    }*/
 	
 });
