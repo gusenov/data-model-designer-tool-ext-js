@@ -6,7 +6,7 @@
  * TODO - Replace this content of this view to suite the needs of your application.
  */
 Ext.define('Dalagen.view.main.Main', {
-    extend: 'Ext.tab.Panel',
+    extend: 'Ext.panel.Panel',
     xtype: 'app-main',
 
     requires: [
@@ -15,10 +15,15 @@ Ext.define('Dalagen.view.main.Main', {
 
         'Dalagen.view.main.MainController',
         'Dalagen.view.main.MainModel',
-        'Dalagen.view.main.List'
+        'Dalagen.view.main.List',
+		
+		'Dalagen.view.entities.EntitiesView',
+		'Dalagen.view.attributes.AttributesView',
+		'Dalagen.view.attributes.MembershipView',
+		'Dalagen.view.entities.RelationshipView'
     ],
 
-    controller: 'main',
+    /*controller: 'main',
     viewModel: 'main',
 
     ui: 'navigation',
@@ -100,5 +105,37 @@ Ext.define('Dalagen.view.main.Main', {
         bind: {
             html: '{loremIpsum}'
         }
-    }]
+    }]*/
+	
+    layout: {
+        type: 'hbox',
+        pack: 'start',
+        align: 'stretch',
+    },
+    items: [
+		{
+			xtype: 'entitiesview',
+			flex: 1
+		}, {
+			xtype: 'attrview',
+			flex: 1
+		}, {
+			xtype: 'panel',
+			flex: 3,
+			layout: {
+				type: 'vbox',
+				pack: 'start',
+				align: 'stretch',
+			},
+			items: [
+				{
+					xtype: 'membershipview',
+					flex: 1
+				}, {
+					xtype: 'relationshipview',
+					flex: 1
+				}
+			]
+		}
+	]
 });

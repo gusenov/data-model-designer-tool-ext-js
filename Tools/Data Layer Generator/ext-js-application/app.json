@@ -553,7 +553,10 @@
         "classic": {
             "toolkit": "classic",
             
-            "theme": "theme-triton",
+            "theme": "theme-classic",
+			/*
+			Доступные темы можно посмотреть тут: https://docs.sencha.com/extjs/6.0/core_concepts/theming.html
+			*/
             
             "sass": {
                 // "save": "classic/sass/save.scss"
