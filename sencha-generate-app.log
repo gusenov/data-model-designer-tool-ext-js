@@ -1,0 +1,52 @@
+Sencha Cmd v6.5.2.15
+[INF] Loading framework from /opt/sencha/cmd/repo/extract/ext/6.0.0.640
+[INF] Copying framework to data-model-designer-tool-ext-js/Data Model Designer tool/ext
+[INF] Processing Build Descriptor : classic (development environment)
+[INF] Loading compiler context
+[INF] Loading app json manifest...
+[INF] Appending content to data-model-designer-tool-ext-js/Data Model Designer tool/bootstrap.js
+[INF] Writing content to data-model-designer-tool-ext-js/Data Model Designer tool/classic.json
+[INF] merging 248 input resources into data-model-designer-tool-ext-js/Data Model Designer tool/build/development/Data_Model_Designer_tool/classic/resources
+[INF] merged 248 resources into data-model-designer-tool-ext-js/Data Model Designer tool/build/development/Data_Model_Designer_tool/classic/resources
+[INF] merging 12 input resources into data-model-designer-tool-ext-js/Data Model Designer tool/build/development/Data_Model_Designer_tool
+[INF] merged 11 resources into data-model-designer-tool-ext-js/Data Model Designer tool/build/development/Data_Model_Designer_tool
+[INF] Writing content to data-model-designer-tool-ext-js/Data Model Designer tool/build/temp/development/Data_Model_Designer_tool/slicer-temp/bootstrap.json
+[INF] Writing content to data-model-designer-tool-ext-js/Data Model Designer tool/build/temp/development/Data_Model_Designer_tool/slicer-temp/bootstrap.js
+[INF] writing sass content to data-model-designer-tool-ext-js/Data Model Designer tool/build/temp/development/Data_Model_Designer_tool/sass/Data_Model_Designer_tool-all.scss.tmp
+[INF] appending sass content to data-model-designer-tool-ext-js/Data Model Designer tool/build/temp/development/Data_Model_Designer_tool/sass/Data_Model_Designer_tool-all.scss.tmp
+[INF] appending sass content to data-model-designer-tool-ext-js/Data Model Designer tool/build/temp/development/Data_Model_Designer_tool/sass/Data_Model_Designer_tool-all.scss.tmp
+[INF] writing sass content to data-model-designer-tool-ext-js/Data Model Designer tool/build/temp/development/Data_Model_Designer_tool/sass/config.rb
+[INF] Writing content to data-model-designer-tool-ext-js/Data Model Designer tool/build/development/Data_Model_Designer_tool/classic.json
+[WRN] Use of 'require()' will be deprecated: data-model-designer-tool-ext-js/Data Model Designer tool/ext/classic/theme-neutral/sass/etc/mixins/font-icon.scss:1
+[WRN] Use @import instead
+[LOG] Fashion build starting for data-model-designer-tool-ext-js/Data Model Designer tool/build/temp/development/Data_Model_Designer_tool/sass/Data_Model_Designer_tool-all.scss
+[LOG] Fashion build complete for data-model-designer-tool-ext-js/Data Model Designer tool/build/temp/development/Data_Model_Designer_tool/sass/Data_Model_Designer_tool-all.scss
+[LOG] Fashion build completed in 7.022 sec.
+[INF] Appending content to data-model-designer-tool-ext-js/Data Model Designer tool/bootstrap.js
+[INF] Writing content to data-model-designer-tool-ext-js/Data Model Designer tool/classic.json
+[INF] 
+[INF] ======================================================================
+[INF] 
+[INF] Processing Build Descriptor : modern (development environment)
+[INF] Loading compiler context
+[INF] Loading app json manifest...
+[INF] Appending content to data-model-designer-tool-ext-js/Data Model Designer tool/bootstrap.js
+[INF] Writing content to data-model-designer-tool-ext-js/Data Model Designer tool/modern.json
+[INF] merging 390 input resources into data-model-designer-tool-ext-js/Data Model Designer tool/build/development/Data_Model_Designer_tool/modern/resources
+[INF] merged 390 resources into data-model-designer-tool-ext-js/Data Model Designer tool/build/development/Data_Model_Designer_tool/modern/resources
+[INF] merging 12 input resources into data-model-designer-tool-ext-js/Data Model Designer tool/build/development/Data_Model_Designer_tool
+[INF] merged 0 resources into data-model-designer-tool-ext-js/Data Model Designer tool/build/development/Data_Model_Designer_tool
+[INF] Writing content to data-model-designer-tool-ext-js/Data Model Designer tool/build/temp/development/Data_Model_Designer_tool/slicer-temp/bootstrap.json
+[INF] Writing content to data-model-designer-tool-ext-js/Data Model Designer tool/build/temp/development/Data_Model_Designer_tool/slicer-temp/bootstrap.js
+[INF] writing sass content to data-model-designer-tool-ext-js/Data Model Designer tool/build/temp/development/Data_Model_Designer_tool/sass/Data_Model_Designer_tool-all.scss.tmp
+[INF] appending sass content to data-model-designer-tool-ext-js/Data Model Designer tool/build/temp/development/Data_Model_Designer_tool/sass/Data_Model_Designer_tool-all.scss.tmp
+[INF] appending sass content to data-model-designer-tool-ext-js/Data Model Designer tool/build/temp/development/Data_Model_Designer_tool/sass/Data_Model_Designer_tool-all.scss.tmp
+[INF] Writing content to data-model-designer-tool-ext-js/Data Model Designer tool/build/development/Data_Model_Designer_tool/modern.json
+[WRN] Use of 'require()' will be deprecated: data-model-designer-tool-ext-js/Data Model Designer tool/ext/modern/theme-base/sass/etc/mixins/font-icon.scss:1
+[WRN] Use @import instead
+[LOG] Fashion build starting for data-model-designer-tool-ext-js/Data Model Designer tool/build/temp/development/Data_Model_Designer_tool/sass/Data_Model_Designer_tool-all.scss
+[LOG] Fashion build complete for data-model-designer-tool-ext-js/Data Model Designer tool/build/temp/development/Data_Model_Designer_tool/sass/Data_Model_Designer_tool-all.scss
+[LOG] Fashion build completed in 3.453 sec.
+[INF] Appending content to data-model-designer-tool-ext-js/Data Model Designer tool/bootstrap.js
+[INF] Writing content to data-model-designer-tool-ext-js/Data Model Designer tool/modern.json
+
